@@ -16,13 +16,13 @@ public class Algorithms {
 
     public static void main(String[] args) throws FileNotFoundException {
         f = new File("Numbers.txt");
-        s = new Scanner(f); // Initialize Scanner here
+        s = new Scanner(f); 
 
         List<Integer> numbers = new ArrayList<>();
         while (s.hasNext()) {
             numbers.add(s.nextInt());
         }
-        s.close();  // Close scanner after reading file
+        s.close();  
 
         int odds = countOdds(numbers);
         int evens = countEvens(numbers);
